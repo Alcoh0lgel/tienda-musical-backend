@@ -1,4 +1,4 @@
-package com.fullstack.cliente.config;
+package com.fullstack.reclamos.config;
 
 import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;
@@ -19,7 +19,7 @@ public class SwaggerConfig {
         return new OpenAPI()
 
                 .info(new Info()
-                        .title("API Tienda Musical - Cliente")
+                        .title("API Tienda Musical - Reclamos")
                         .version("1.0")
                         .description("Documentación interactiva con JWT"))
 

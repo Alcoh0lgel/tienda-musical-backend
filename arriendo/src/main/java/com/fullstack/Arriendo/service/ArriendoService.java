@@ -80,6 +80,7 @@ public class ArriendoService {
         arriendo.setDescripcion(productoArriendo.get("descripcion").toString());
         arriendo.setTipoInstrumento(productoArriendo.get("tipoInstrumento").toString());
         arriendo.setPrecioArriendo(Integer.parseInt(productoArriendo.get("precioArriendo").toString()));
+        arriendo.setPrecioGarantia(Integer.parseInt(productoArriendo.get("precioGarantia").toString()));
         log.info("Arriendo guardado exitosamente: {}", arriendo);
 
         return guardarArriendo(arriendo);

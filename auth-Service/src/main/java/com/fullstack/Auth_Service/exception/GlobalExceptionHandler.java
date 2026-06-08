@@ -1,6 +1,7 @@
 package com.fullstack.Auth_Service.exception;
 
 import com.fullstack.Auth_Service.dto.ErrorResponse;
+import io.swagger.v3.oas.annotations.Hidden;
 import jakarta.security.auth.message.AuthException;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import java.time.LocalDateTime;
 import java.util.List;
 
+@Hidden
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 

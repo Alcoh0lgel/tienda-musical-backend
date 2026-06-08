@@ -1,5 +1,6 @@
 package com.fullstack.servicioTecnico.exception;
 
+import io.swagger.v3.oas.annotations.Hidden;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,6 +12,7 @@ import com.fullstack.servicioTecnico.dto.ApiErrorResponse;
 import java.time.LocalDateTime;
 import java.util.List;
 
+@Hidden
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
