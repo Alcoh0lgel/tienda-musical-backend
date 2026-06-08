@@ -1,0 +1,1705 @@
+2026-06-04 19:08:14 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-06-04 19:08:14 [main] INFO  c.f.cliente.ClienteApplication - Starting ClienteApplication using Java 21.0.10 with PID 7568 (C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend\cliente\target\classes started by PC in C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend)
+2026-06-04 19:08:14 [main] INFO  c.f.cliente.ClienteApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 19:08:15 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-04 19:08:15 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interface.
+2026-06-04 19:08:15 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-06-04 19:08:15 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-06-04 19:08:15 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-04 19:08:15 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-04 19:08:15 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1325 ms
+2026-06-04 19:08:16 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-04 19:08:16 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@995ad50
+2026-06-04 19:08:16 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-04 19:08:16 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/db_tiendamusical (MySQL 8.4)
+2026-06-04 19:08:16 [main] WARN  o.f.c.i.database.base.Database - Using MySQL 8.4 which is newer than the version Flyway has been verified with. The latest verified version of MySQL is 8.1.
+2026-06-04 19:08:16 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.031s)
+2026-06-04 19:08:16 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `db_tiendamusical`: 2
+2026-06-04 19:08:16 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `db_tiendamusical` is up to date. No migration necessary.
+2026-06-04 19:08:16 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-04 19:08:16 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-04 19:08:17 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-04 19:08:17 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/db_tiendamusical]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: db_tiendamusical/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-04 19:08:18 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-04 19:08:18 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-04 19:08:18 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-04 19:08:18 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-04 19:08:18 [main] WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 1b64989b-a827-47ca-8df9-60eb302b3e4a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-04 19:08:18 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-04 19:08:18 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-06-04 19:08:18 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-06-04 19:08:18 [main] INFO  c.f.cliente.ClienteApplication - Started ClienteApplication in 5.135 seconds (process running for 5.858)
+2026-06-04 19:15:37 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-04 19:15:37 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-04 19:15:37 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-04 19:15:37 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-04 19:15:37 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-04 19:24:38 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-06-04 19:24:38 [main] INFO  c.f.cliente.ClienteApplication - Starting ClienteApplication using Java 21.0.10 with PID 18560 (C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend\cliente\target\classes started by PC in C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend)
+2026-06-04 19:24:38 [main] INFO  c.f.cliente.ClienteApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 19:24:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-04 19:24:39 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interface.
+2026-06-04 19:24:39 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-06-04 19:24:39 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-06-04 19:24:39 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-04 19:24:39 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-04 19:24:40 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1430 ms
+2026-06-04 19:24:40 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-04 19:24:40 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1cc708a7
+2026-06-04 19:24:40 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-04 19:24:40 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/db_tiendamusical (MySQL 8.4)
+2026-06-04 19:24:40 [main] WARN  o.f.c.i.database.base.Database - Using MySQL 8.4 which is newer than the version Flyway has been verified with. The latest verified version of MySQL is 8.1.
+2026-06-04 19:24:41 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.038s)
+2026-06-04 19:24:41 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `db_tiendamusical`: 2
+2026-06-04 19:24:41 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `db_tiendamusical` is up to date. No migration necessary.
+2026-06-04 19:24:41 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-04 19:24:41 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-04 19:24:41 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-04 19:24:41 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/db_tiendamusical]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: db_tiendamusical/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-04 19:24:43 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-04 19:24:43 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-04 19:24:43 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-04 19:24:43 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-04 19:24:43 [main] WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 41b192fd-03e7-450a-932e-ddc205aba99d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-04 19:24:43 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-04 19:24:43 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-06-04 19:24:43 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-06-04 19:24:43 [main] INFO  c.f.cliente.ClienteApplication - Started ClienteApplication in 5.899 seconds (process running for 6.52)
+2026-06-04 19:26:06 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-04 19:26:06 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-04 19:26:06 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-04 19:26:06 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-04 19:26:06 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-04 19:33:49 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-06-04 19:33:49 [main] INFO  c.f.cliente.ClienteApplication - Starting ClienteApplication using Java 21.0.10 with PID 10900 (C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend\cliente\target\classes started by PC in C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend)
+2026-06-04 19:33:49 [main] INFO  c.f.cliente.ClienteApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 19:33:49 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-04 19:33:49 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interface.
+2026-06-04 19:33:50 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-06-04 19:33:50 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-06-04 19:33:50 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-04 19:33:50 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-04 19:33:50 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1043 ms
+2026-06-04 19:33:50 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-04 19:33:51 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@995ad50
+2026-06-04 19:33:51 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-04 19:33:51 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/db_tiendamusical (MySQL 8.4)
+2026-06-04 19:33:51 [main] WARN  o.f.c.i.database.base.Database - Using MySQL 8.4 which is newer than the version Flyway has been verified with. The latest verified version of MySQL is 8.1.
+2026-06-04 19:33:51 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Schema history table `db_tiendamusical`.`flyway_schema_history_cliente` does not exist yet
+2026-06-04 19:33:51 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.019s)
+2026-06-04 19:33:51 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table `db_tiendamusical`.`flyway_schema_history_cliente` with baseline ...
+2026-06-04 19:33:51 [main] INFO  o.f.core.internal.command.DbBaseline - Successfully baselined schema with version: 0
+2026-06-04 19:33:51 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `db_tiendamusical`: 0
+2026-06-04 19:33:51 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema `db_tiendamusical` to version "1 - creartablas"
+2026-06-04 19:33:51 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema `db_tiendamusical` to version "2 - insertarTablas"
+2026-06-04 19:33:51 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 2 migrations to schema `db_tiendamusical`, now at version v2 (execution time 00:00.112s)
+2026-06-04 19:33:51 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-04 19:33:51 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-04 19:33:51 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-04 19:33:52 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/db_tiendamusical]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: db_tiendamusical/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-04 19:33:52 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-04 19:33:52 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-04 19:33:53 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-04 19:33:53 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-04 19:33:53 [main] WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 29ebcc20-eb51-47af-801a-4529ed55fc3f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-04 19:33:53 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-04 19:33:53 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-06-04 19:33:53 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-06-04 19:33:53 [main] INFO  c.f.cliente.ClienteApplication - Started ClienteApplication in 4.801 seconds (process running for 5.416)
+2026-06-04 19:35:27 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-04 19:35:27 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-04 19:35:27 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-04 19:35:27 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-04 19:35:27 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-04 19:36:26 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-06-04 19:36:26 [main] INFO  c.f.cliente.ClienteApplication - Starting ClienteApplication using Java 21.0.10 with PID 18652 (C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend\cliente\target\classes started by PC in C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend)
+2026-06-04 19:36:26 [main] INFO  c.f.cliente.ClienteApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 19:36:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-04 19:36:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interface.
+2026-06-04 19:36:27 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-06-04 19:36:27 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-06-04 19:36:27 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-04 19:36:27 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-04 19:36:27 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1063 ms
+2026-06-04 19:36:27 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-04 19:36:27 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1cc708a7
+2026-06-04 19:36:27 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-04 19:36:27 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/db_tiendamusical (MySQL 8.4)
+2026-06-04 19:36:27 [main] WARN  o.f.c.i.database.base.Database - Using MySQL 8.4 which is newer than the version Flyway has been verified with. The latest verified version of MySQL is 8.1.
+2026-06-04 19:36:27 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.027s)
+2026-06-04 19:36:27 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `db_tiendamusical`: 2
+2026-06-04 19:36:27 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `db_tiendamusical` is up to date. No migration necessary.
+2026-06-04 19:36:28 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-04 19:36:28 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-04 19:36:28 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-04 19:36:28 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/db_tiendamusical]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: db_tiendamusical/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-04 19:36:29 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-04 19:36:29 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-04 19:36:29 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-04 19:36:29 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-04 19:36:29 [main] WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 92158a6f-34a1-4c8b-9ad5-55a0abe3dba7
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-04 19:36:29 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-04 19:36:30 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-06-04 19:36:30 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-06-04 19:36:30 [main] INFO  c.f.cliente.ClienteApplication - Started ClienteApplication in 4.491 seconds (process running for 5.105)
+2026-06-04 19:45:33 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-04 19:45:33 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-04 19:45:33 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-04 19:45:33 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-04 19:45:33 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-05 14:39:55 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-06-05 14:39:55 [main] INFO  c.f.cliente.ClienteApplication - Starting ClienteApplication using Java 21.0.10 with PID 10480 (C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend\cliente\target\classes started by PC in C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend)
+2026-06-05 14:39:55 [main] INFO  c.f.cliente.ClienteApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-05 14:39:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-05 14:39:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interface.
+2026-06-05 14:39:56 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-06-05 14:39:56 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-06-05 14:39:56 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-05 14:39:56 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-05 14:39:56 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 982 ms
+2026-06-05 14:39:56 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-05 14:39:56 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1cc708a7
+2026-06-05 14:39:56 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-05 14:39:56 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/db_tiendamusical (MySQL 8.4)
+2026-06-05 14:39:56 [main] WARN  o.f.c.i.database.base.Database - Using MySQL 8.4 which is newer than the version Flyway has been verified with. The latest verified version of MySQL is 8.1.
+2026-06-05 14:39:56 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Schema history table `db_tiendamusical`.`flyway_schema_history_cliente` does not exist yet
+2026-06-05 14:39:56 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.021s)
+2026-06-05 14:39:57 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table `db_tiendamusical`.`flyway_schema_history_cliente` with baseline ...
+2026-06-05 14:39:57 [main] INFO  o.f.core.internal.command.DbBaseline - Successfully baselined schema with version: 0
+2026-06-05 14:39:57 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `db_tiendamusical`: 0
+2026-06-05 14:39:57 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema `db_tiendamusical` to version "1 - creartablas"
+2026-06-05 14:39:57 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema `db_tiendamusical` to version "2 - insertarTablas"
+2026-06-05 14:39:57 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 2 migrations to schema `db_tiendamusical`, now at version v2 (execution time 00:00.146s)
+2026-06-05 14:39:57 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-05 14:39:57 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-05 14:39:58 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-05 14:39:58 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/db_tiendamusical]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: db_tiendamusical/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-05 14:39:58 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-05 14:39:59 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 14:39:59 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-05 14:39:59 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-05 14:39:59 [main] WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 4c9ab7a1-9370-416a-b294-5b04b41e2b48
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-05 14:39:59 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-05 14:39:59 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-06-05 14:39:59 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-06-05 14:39:59 [main] INFO  c.f.cliente.ClienteApplication - Started ClienteApplication in 5.142 seconds (process running for 5.703)
+2026-06-05 14:45:49 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-05 14:45:49 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-05 14:45:49 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 14:45:49 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-05 14:45:49 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-05 14:49:13 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-06-05 14:49:13 [main] INFO  c.f.cliente.ClienteApplication - Starting ClienteApplication using Java 21.0.10 with PID 16460 (C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend\cliente\target\classes started by PC in C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend)
+2026-06-05 14:49:13 [main] INFO  c.f.cliente.ClienteApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-05 14:49:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-05 14:49:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interface.
+2026-06-05 14:49:14 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-06-05 14:49:14 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-06-05 14:49:14 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-05 14:49:14 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-05 14:49:14 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1149 ms
+2026-06-05 14:49:14 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-05 14:49:15 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1cc708a7
+2026-06-05 14:49:15 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-05 14:49:15 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/db_tiendamusical (MySQL 8.4)
+2026-06-05 14:49:15 [main] WARN  o.f.c.i.database.base.Database - Using MySQL 8.4 which is newer than the version Flyway has been verified with. The latest verified version of MySQL is 8.1.
+2026-06-05 14:49:15 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.034s)
+2026-06-05 14:49:15 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `db_tiendamusical`: 2
+2026-06-05 14:49:15 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `db_tiendamusical` is up to date. No migration necessary.
+2026-06-05 14:49:15 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-05 14:49:15 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-05 14:49:16 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-05 14:49:16 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/db_tiendamusical]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: db_tiendamusical/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-05 14:49:17 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-05 14:49:17 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 14:49:17 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-05 14:49:17 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-05 14:49:17 [main] WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 43eb5b9e-2187-47d1-b316-6a7473c89a92
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-05 14:49:17 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-05 14:49:18 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-06-05 14:49:18 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-06-05 14:49:18 [main] INFO  c.f.cliente.ClienteApplication - Started ClienteApplication in 5.271 seconds (process running for 5.959)
+2026-06-05 14:57:29 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-05 14:57:29 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-05 14:57:29 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 14:57:29 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-05 14:57:29 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-05 15:08:45 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-06-05 15:08:45 [main] INFO  c.f.cliente.ClienteApplication - Starting ClienteApplication using Java 21.0.10 with PID 18872 (C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend\cliente\target\classes started by PC in C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend)
+2026-06-05 15:08:45 [main] INFO  c.f.cliente.ClienteApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-05 15:08:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-05 15:08:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interface.
+2026-06-05 15:08:46 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-06-05 15:08:46 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-06-05 15:08:46 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-05 15:08:46 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-05 15:08:46 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1031 ms
+2026-06-05 15:08:46 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-05 15:08:47 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1cc708a7
+2026-06-05 15:08:47 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-05 15:08:47 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/db_tiendamusical (MySQL 8.4)
+2026-06-05 15:08:47 [main] WARN  o.f.c.i.database.base.Database - Using MySQL 8.4 which is newer than the version Flyway has been verified with. The latest verified version of MySQL is 8.1.
+2026-06-05 15:08:47 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.022s)
+2026-06-05 15:08:47 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `db_tiendamusical`: 2
+2026-06-05 15:08:47 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `db_tiendamusical` is up to date. No migration necessary.
+2026-06-05 15:08:47 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-05 15:08:47 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-05 15:08:47 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-05 15:08:47 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/db_tiendamusical]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: db_tiendamusical/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-05 15:08:48 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-05 15:08:48 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 15:08:48 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-05 15:08:48 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-05 15:08:48 [main] WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 214b37d7-9170-4bc0-9a93-45db45fad50b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-05 15:08:48 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-05 15:08:49 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-06-05 15:08:49 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-06-05 15:08:49 [main] INFO  c.f.cliente.ClienteApplication - Started ClienteApplication in 4.148 seconds (process running for 4.773)
+2026-06-05 15:11:54 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-05 15:11:54 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-05 15:11:54 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 15:11:54 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-05 15:11:54 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-05 16:31:44 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-06-05 16:31:44 [main] INFO  c.f.cliente.ClienteApplication - Starting ClienteApplication using Java 21.0.10 with PID 20292 (C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend\cliente\target\classes started by PC in C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend)
+2026-06-05 16:31:44 [main] INFO  c.f.cliente.ClienteApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-05 16:31:45 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-05 16:31:45 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interface.
+2026-06-05 16:31:45 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-06-05 16:31:45 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-06-05 16:31:45 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-05 16:31:45 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-05 16:31:45 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1355 ms
+2026-06-05 16:31:46 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-05 16:31:46 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1cc708a7
+2026-06-05 16:31:46 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-05 16:31:46 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/db_tiendamusical (MySQL 8.4)
+2026-06-05 16:31:46 [main] WARN  o.f.c.i.database.base.Database - Using MySQL 8.4 which is newer than the version Flyway has been verified with. The latest verified version of MySQL is 8.1.
+2026-06-05 16:31:46 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.039s)
+2026-06-05 16:31:46 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `db_tiendamusical`: 2
+2026-06-05 16:31:46 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `db_tiendamusical` is up to date. No migration necessary.
+2026-06-05 16:31:46 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-05 16:31:46 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-05 16:31:47 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-05 16:31:47 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/db_tiendamusical]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: db_tiendamusical/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-05 16:31:48 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-05 16:31:48 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 16:31:48 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-05 16:31:48 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-05 16:31:48 [main] WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 9b506979-906b-4643-b9f6-194759bb863e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-05 16:31:48 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-05 16:31:49 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-06-05 16:31:49 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-06-05 16:31:49 [main] INFO  c.f.cliente.ClienteApplication - Started ClienteApplication in 5.282 seconds (process running for 5.901)
+2026-06-05 16:34:09 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-05 16:34:09 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-05 16:34:09 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 16:34:09 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-05 16:34:09 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-05 16:34:47 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-06-05 16:34:47 [main] INFO  c.f.cliente.ClienteApplication - Starting ClienteApplication using Java 21.0.10 with PID 19660 (C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend\cliente\target\classes started by PC in C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend)
+2026-06-05 16:34:47 [main] INFO  c.f.cliente.ClienteApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-05 16:34:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-05 16:34:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interface.
+2026-06-05 16:34:48 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-06-05 16:34:48 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-06-05 16:34:48 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-05 16:34:48 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-05 16:34:48 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1568 ms
+2026-06-05 16:34:49 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-05 16:34:49 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1cc708a7
+2026-06-05 16:34:49 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-05 16:34:49 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/db_tiendamusical (MySQL 8.4)
+2026-06-05 16:34:49 [main] WARN  o.f.c.i.database.base.Database - Using MySQL 8.4 which is newer than the version Flyway has been verified with. The latest verified version of MySQL is 8.1.
+2026-06-05 16:34:49 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Schema history table `db_tiendamusical`.`flyway_schema_history_cliente` does not exist yet
+2026-06-05 16:34:49 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.018s)
+2026-06-05 16:34:49 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table `db_tiendamusical`.`flyway_schema_history_cliente` with baseline ...
+2026-06-05 16:34:49 [main] INFO  o.f.core.internal.command.DbBaseline - Successfully baselined schema with version: 0
+2026-06-05 16:34:49 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `db_tiendamusical`: 0
+2026-06-05 16:34:49 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema `db_tiendamusical` to version "1 - creartablas"
+2026-06-05 16:34:49 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema `db_tiendamusical` to version "2 - insertarTablas"
+2026-06-05 16:34:50 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 2 migrations to schema `db_tiendamusical`, now at version v2 (execution time 00:00.130s)
+2026-06-05 16:34:50 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-05 16:34:50 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-05 16:34:50 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-05 16:34:50 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/db_tiendamusical]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: db_tiendamusical/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-05 16:34:51 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-05 16:34:52 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 16:34:52 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-05 16:34:52 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-05 16:34:52 [main] WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 155c4762-d6ae-4419-a245-9381a2f0b872
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-05 16:34:52 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-05 16:34:53 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-06-05 16:34:53 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-06-05 16:34:53 [main] INFO  c.f.cliente.ClienteApplication - Started ClienteApplication in 6.512 seconds (process running for 7.225)
+2026-06-05 16:40:50 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-05 16:40:50 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-05 16:40:50 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 16:40:50 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-05 16:40:50 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-05 16:42:55 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-06-05 16:42:55 [main] INFO  c.f.cliente.ClienteApplication - Starting ClienteApplication using Java 21.0.10 with PID 19800 (C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend\cliente\target\classes started by PC in C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend)
+2026-06-05 16:42:55 [main] INFO  c.f.cliente.ClienteApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-05 16:42:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-05 16:42:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interface.
+2026-06-05 16:42:57 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-06-05 16:42:57 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-06-05 16:42:57 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-05 16:42:57 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-05 16:42:57 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1397 ms
+2026-06-05 16:42:57 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-05 16:42:58 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4d4b019e
+2026-06-05 16:42:58 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-05 16:42:58 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/db_tiendamusical (MySQL 8.4)
+2026-06-05 16:42:58 [main] WARN  o.f.c.i.database.base.Database - Using MySQL 8.4 which is newer than the version Flyway has been verified with. The latest verified version of MySQL is 8.1.
+2026-06-05 16:42:58 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.041s)
+2026-06-05 16:42:58 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `db_tiendamusical`: 2
+2026-06-05 16:42:58 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `db_tiendamusical` is up to date. No migration necessary.
+2026-06-05 16:42:58 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-05 16:42:58 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-05 16:42:59 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-05 16:42:59 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/db_tiendamusical]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: db_tiendamusical/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-05 16:43:00 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-05 16:43:00 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 16:43:00 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-05 16:43:00 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-05 16:43:00 [main] WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 510da8e2-39ae-4f63-8db9-18aae4205f2c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-05 16:43:00 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-05 16:43:01 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-06-05 16:43:01 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-06-05 16:43:01 [main] INFO  c.f.cliente.ClienteApplication - Started ClienteApplication in 5.772 seconds (process running for 6.392)
+2026-06-05 16:43:33 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-05 16:43:33 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-05 16:43:33 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 16:43:33 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-05 16:43:33 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-05 17:51:22 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-06-05 17:51:22 [main] INFO  c.f.cliente.ClienteApplication - Starting ClienteApplication using Java 21.0.10 with PID 1932 (C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend\cliente\target\classes started by PC in C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend)
+2026-06-05 17:51:22 [main] INFO  c.f.cliente.ClienteApplication - The following 1 profile is active: "dev"
+2026-06-05 17:51:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-05 17:51:22 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interface.
+2026-06-05 17:51:23 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-06-05 17:51:23 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-06-05 17:51:23 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-05 17:51:23 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-05 17:51:23 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 988 ms
+2026-06-05 17:51:23 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-05 17:51:23 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@29fcfc54
+2026-06-05 17:51:23 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-05 17:51:23 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/db_tiendamusical (MySQL 8.4)
+2026-06-05 17:51:23 [main] WARN  o.f.c.i.database.base.Database - Using MySQL 8.4 which is newer than the version Flyway has been verified with. The latest verified version of MySQL is 8.1.
+2026-06-05 17:51:23 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.023s)
+2026-06-05 17:51:23 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `db_tiendamusical`: 2
+2026-06-05 17:51:23 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `db_tiendamusical` is up to date. No migration necessary.
+2026-06-05 17:51:24 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-05 17:51:24 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-05 17:51:24 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-05 17:51:24 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/db_tiendamusical]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: db_tiendamusical/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-05 17:51:25 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-05 17:51:25 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 17:51:25 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-05 17:51:25 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-05 17:51:25 [main] WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: d5fceca8-30eb-45e8-9f8e-ff3474df05ff
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-05 17:51:25 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-05 17:51:25 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-06-05 17:51:25 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-06-05 17:51:25 [main] INFO  c.f.cliente.ClienteApplication - Started ClienteApplication in 4.057 seconds (process running for 4.665)
+2026-06-05 17:51:26 [main] WARN  com.fullstack.cliente.DataLoader - La base de datos ya contiene registros. Se omitió el DataLoader.
+2026-06-05 17:52:37 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-05 17:52:37 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-05 17:52:37 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 17:52:37 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-05 17:52:37 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-05 17:52:41 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-06-05 17:52:41 [main] INFO  c.f.cliente.ClienteApplication - Starting ClienteApplication using Java 21.0.10 with PID 22904 (C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend\cliente\target\classes started by PC in C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend)
+2026-06-05 17:52:41 [main] INFO  c.f.cliente.ClienteApplication - The following 1 profile is active: "dev"
+2026-06-05 17:52:42 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-05 17:52:42 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interface.
+2026-06-05 17:52:42 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-06-05 17:52:42 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-06-05 17:52:42 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-05 17:52:42 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-05 17:52:42 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 957 ms
+2026-06-05 17:52:42 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-05 17:52:43 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@a357c3e
+2026-06-05 17:52:43 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-05 17:52:43 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/db_tiendamusical (MySQL 8.4)
+2026-06-05 17:52:43 [main] WARN  o.f.c.i.database.base.Database - Using MySQL 8.4 which is newer than the version Flyway has been verified with. The latest verified version of MySQL is 8.1.
+2026-06-05 17:52:43 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Schema history table `db_tiendamusical`.`flyway_schema_history_cliente` does not exist yet
+2026-06-05 17:52:43 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.017s)
+2026-06-05 17:52:43 [main] INFO  org.flywaydb.core.Flyway - All configured schemas are empty; baseline operation skipped. A baseline or migration script with a lower version than the baseline version may execute if available. Check the Schemas parameter if this is not intended.
+2026-06-05 17:52:43 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table `db_tiendamusical`.`flyway_schema_history_cliente` ...
+2026-06-05 17:52:43 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `db_tiendamusical`: << Empty Schema >>
+2026-06-05 17:52:43 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema `db_tiendamusical` to version "1 - creartablas"
+2026-06-05 17:52:43 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema `db_tiendamusical` to version "2 - insertarTablas"
+2026-06-05 17:52:43 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 2 migrations to schema `db_tiendamusical`, now at version v2 (execution time 00:00.111s)
+2026-06-05 17:52:43 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-05 17:52:43 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-05 17:52:44 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-05 17:52:44 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/db_tiendamusical]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: db_tiendamusical/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-05 17:52:44 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-05 17:52:44 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 17:52:45 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-05 17:52:45 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-05 17:52:45 [main] WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 6874719c-ae3c-400e-bf31-98c50457e69c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-05 17:52:45 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-05 17:52:45 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-06-05 17:52:45 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-06-05 17:52:45 [main] INFO  c.f.cliente.ClienteApplication - Started ClienteApplication in 4.43 seconds (process running for 5.013)
+2026-06-05 17:52:45 [main] WARN  com.fullstack.cliente.DataLoader - La base de datos ya contiene registros. Se omitió el DataLoader.
+2026-06-05 17:53:57 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-05 17:53:57 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-05 17:53:57 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 17:53:57 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-05 17:53:57 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-05 17:54:55 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-06-05 17:54:55 [main] INFO  c.f.cliente.ClienteApplication - Starting ClienteApplication using Java 21.0.10 with PID 17840 (C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend\cliente\target\classes started by PC in C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend)
+2026-06-05 17:54:55 [main] INFO  c.f.cliente.ClienteApplication - The following 1 profile is active: "dev"
+2026-06-05 17:54:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-05 17:54:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interface.
+2026-06-05 17:54:56 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-06-05 17:54:56 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-06-05 17:54:56 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-05 17:54:56 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-05 17:54:56 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 963 ms
+2026-06-05 17:54:56 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-05 17:54:57 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@a357c3e
+2026-06-05 17:54:57 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-05 17:54:57 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/db_tiendamusical (MySQL 8.4)
+2026-06-05 17:54:57 [main] WARN  o.f.c.i.database.base.Database - Using MySQL 8.4 which is newer than the version Flyway has been verified with. The latest verified version of MySQL is 8.1.
+2026-06-05 17:54:57 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Schema history table `db_tiendamusical`.`flyway_schema_history_cliente` does not exist yet
+2026-06-05 17:54:57 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.018s)
+2026-06-05 17:54:57 [main] INFO  org.flywaydb.core.Flyway - All configured schemas are empty; baseline operation skipped. A baseline or migration script with a lower version than the baseline version may execute if available. Check the Schemas parameter if this is not intended.
+2026-06-05 17:54:57 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table `db_tiendamusical`.`flyway_schema_history_cliente` ...
+2026-06-05 17:54:57 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `db_tiendamusical`: << Empty Schema >>
+2026-06-05 17:54:57 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema `db_tiendamusical` to version "1 - creartablas"
+2026-06-05 17:54:57 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 1 migration to schema `db_tiendamusical`, now at version v1 (execution time 00:00.065s)
+2026-06-05 17:54:57 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-05 17:54:57 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-05 17:54:57 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-05 17:54:58 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/db_tiendamusical]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: db_tiendamusical/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-05 17:54:58 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-05 17:54:58 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 17:54:59 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-05 17:54:59 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-05 17:54:59 [main] WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 9d09dd3b-2830-48a8-9e79-1123b58138d8
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-05 17:54:59 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-05 17:54:59 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-06-05 17:54:59 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-06-05 17:54:59 [main] INFO  c.f.cliente.ClienteApplication - Started ClienteApplication in 4.495 seconds (process running for 5.125)
+2026-06-05 17:54:59 [main] INFO  com.fullstack.cliente.DataLoader - Iniciando la carga automatica de 25 clientes con DataFaker...
+2026-06-05 17:55:00 [main] INFO  com.fullstack.cliente.DataLoader - Carga masiva completada con exito
+2026-06-05 17:55:52 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-05 17:55:52 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-05 17:55:52 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 17:55:52 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-05 17:55:52 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-05 17:56:05 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-06-05 17:56:05 [main] INFO  c.f.cliente.ClienteApplication - Starting ClienteApplication using Java 21.0.10 with PID 21588 (C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend\cliente\target\classes started by PC in C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend)
+2026-06-05 17:56:05 [main] INFO  c.f.cliente.ClienteApplication - The following 1 profile is active: "test"
+2026-06-05 17:56:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-05 17:56:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interface.
+2026-06-05 17:56:06 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-06-05 17:56:06 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-06-05 17:56:06 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-05 17:56:06 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-05 17:56:06 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1099 ms
+2026-06-05 17:56:06 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-05 17:56:06 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2bfc8558
+2026-06-05 17:56:06 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-05 17:56:06 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/db_tiendamusical_test (MySQL 8.4)
+2026-06-05 17:56:06 [main] WARN  o.f.c.i.database.base.Database - Using MySQL 8.4 which is newer than the version Flyway has been verified with. The latest verified version of MySQL is 8.1.
+2026-06-05 17:56:07 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Schema history table `db_tiendamusical_test`.`flyway_schema_history_cliente` does not exist yet
+2026-06-05 17:56:07 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.021s)
+2026-06-05 17:56:07 [main] INFO  org.flywaydb.core.Flyway - All configured schemas are empty; baseline operation skipped. A baseline or migration script with a lower version than the baseline version may execute if available. Check the Schemas parameter if this is not intended.
+2026-06-05 17:56:07 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table `db_tiendamusical_test`.`flyway_schema_history_cliente` ...
+2026-06-05 17:56:07 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `db_tiendamusical_test`: << Empty Schema >>
+2026-06-05 17:56:07 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema `db_tiendamusical_test` to version "1 - creartablas"
+2026-06-05 17:56:07 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 1 migration to schema `db_tiendamusical_test`, now at version v1 (execution time 00:00.049s)
+2026-06-05 17:56:07 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-05 17:56:07 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-05 17:56:07 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-05 17:56:07 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/db_tiendamusical_test]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: db_tiendamusical_test/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-05 17:56:08 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-05 17:56:08 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 17:56:08 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-05 17:56:08 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-05 17:56:08 [main] WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 18260a51-d595-4b55-90fe-57604927c7c3
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-05 17:56:08 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-05 17:56:09 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-06-05 17:56:09 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-06-05 17:56:09 [main] INFO  c.f.cliente.ClienteApplication - Started ClienteApplication in 4.622 seconds (process running for 5.279)
+2026-06-05 17:59:02 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-05 17:59:02 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-05 17:59:02 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 17:59:02 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-05 17:59:02 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-05 18:12:30 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-06-05 18:12:30 [main] INFO  c.f.cliente.ClienteApplication - Starting ClienteApplication using Java 21.0.10 with PID 2784 (C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend\cliente\target\classes started by PC in C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend)
+2026-06-05 18:12:30 [main] INFO  c.f.cliente.ClienteApplication - The following 1 profile is active: "dev"
+2026-06-05 18:12:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-05 18:12:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interface.
+2026-06-05 18:12:32 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-06-05 18:12:32 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-06-05 18:12:32 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-05 18:12:32 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-05 18:12:32 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1454 ms
+2026-06-05 18:12:32 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-05 18:12:33 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@a357c3e
+2026-06-05 18:12:33 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-05 18:12:33 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/db_tiendamusical (MySQL 8.4)
+2026-06-05 18:12:33 [main] WARN  o.f.c.i.database.base.Database - Using MySQL 8.4 which is newer than the version Flyway has been verified with. The latest verified version of MySQL is 8.1.
+2026-06-05 18:12:33 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.036s)
+2026-06-05 18:12:33 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `db_tiendamusical`: 1
+2026-06-05 18:12:33 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `db_tiendamusical` is up to date. No migration necessary.
+2026-06-05 18:12:33 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-05 18:12:33 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-05 18:12:34 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-05 18:12:34 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/db_tiendamusical]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: db_tiendamusical/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-05 18:12:35 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-05 18:12:35 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 18:12:35 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-05 18:12:35 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-05 18:12:35 [main] WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 2b41c38c-db2d-4dcc-9a0b-d29ada3d95b2
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-05 18:12:35 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-05 18:12:35 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-06-05 18:12:35 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-06-05 18:12:36 [main] INFO  c.f.cliente.ClienteApplication - Started ClienteApplication in 5.809 seconds (process running for 6.473)
+2026-06-05 18:12:36 [main] WARN  com.fullstack.cliente.DataLoader - La base de datos ya contiene registros. Se omitió el DataLoader.
+2026-06-05 18:15:01 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-05 18:15:01 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-05 18:15:01 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 18:15:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-05 18:15:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-05 18:17:39 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-06-05 18:17:39 [main] INFO  c.f.cliente.ClienteApplication - Starting ClienteApplication using Java 21.0.10 with PID 24120 (C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend\cliente\target\classes started by PC in C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend)
+2026-06-05 18:17:39 [main] INFO  c.f.cliente.ClienteApplication - The following 1 profile is active: "dev"
+2026-06-05 18:17:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-05 18:17:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interface.
+2026-06-05 18:17:40 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-06-05 18:17:40 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-06-05 18:17:40 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-05 18:17:40 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-05 18:17:40 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1443 ms
+2026-06-05 18:17:41 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-05 18:17:41 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@a357c3e
+2026-06-05 18:17:41 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-05 18:17:41 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/db_tiendamusical (MySQL 8.4)
+2026-06-05 18:17:41 [main] WARN  o.f.c.i.database.base.Database - Using MySQL 8.4 which is newer than the version Flyway has been verified with. The latest verified version of MySQL is 8.1.
+2026-06-05 18:17:41 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.042s)
+2026-06-05 18:17:41 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `db_tiendamusical`: 1
+2026-06-05 18:17:41 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `db_tiendamusical` is up to date. No migration necessary.
+2026-06-05 18:17:41 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-05 18:17:41 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-05 18:17:42 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-05 18:17:42 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/db_tiendamusical]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: db_tiendamusical/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-05 18:17:43 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-05 18:17:43 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 18:17:43 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-05 18:17:43 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-05 18:17:43 [main] WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 8cef1dfa-deef-4995-b3f5-40e5b095b03a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-05 18:17:43 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-05 18:17:44 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-06-05 18:17:44 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-06-05 18:17:44 [main] INFO  c.f.cliente.ClienteApplication - Started ClienteApplication in 5.736 seconds (process running for 6.418)
+2026-06-05 18:17:45 [main] WARN  com.fullstack.cliente.DataLoader - La base de datos ya contiene registros. Se omitió el DataLoader.
+2026-06-05 18:18:02 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-05 18:18:02 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-05 18:18:02 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 18:18:02 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-05 18:18:02 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-05 18:30:00 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-06-05 18:30:00 [main] INFO  c.f.cliente.ClienteApplication - Starting ClienteApplication using Java 21.0.10 with PID 14844 (C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend\cliente\target\classes started by PC in C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend)
+2026-06-05 18:30:00 [main] INFO  c.f.cliente.ClienteApplication - The following 1 profile is active: "dev"
+2026-06-05 18:30:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-05 18:30:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interface.
+2026-06-05 18:30:01 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-06-05 18:30:01 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-06-05 18:30:01 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-05 18:30:01 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-05 18:30:01 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1088 ms
+2026-06-05 18:30:01 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-05 18:30:01 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5bb97fe7
+2026-06-05 18:30:01 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-05 18:30:01 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/db_tiendamusical (MySQL 8.4)
+2026-06-05 18:30:01 [main] WARN  o.f.c.i.database.base.Database - Using MySQL 8.4 which is newer than the version Flyway has been verified with. The latest verified version of MySQL is 8.1.
+2026-06-05 18:30:02 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.023s)
+2026-06-05 18:30:02 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `db_tiendamusical`: 1
+2026-06-05 18:30:02 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `db_tiendamusical` is up to date. No migration necessary.
+2026-06-05 18:30:02 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-05 18:30:02 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-05 18:30:02 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-05 18:30:02 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/db_tiendamusical]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: db_tiendamusical/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-05 18:30:03 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-05 18:30:03 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 18:30:03 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-05 18:30:03 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-05 18:30:03 [main] WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 6e5498e2-bd42-4bac-af5a-c70d126c0019
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-05 18:30:03 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-05 18:30:04 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-06-05 18:30:04 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-06-05 18:30:04 [main] INFO  c.f.cliente.ClienteApplication - Started ClienteApplication in 4.254 seconds (process running for 4.855)
+2026-06-05 18:30:04 [main] WARN  com.fullstack.cliente.DataLoader - La base de datos ya contiene registros. Se omitió el DataLoader.
+2026-06-05 18:30:12 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-05 18:30:12 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-05 18:30:12 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-06-05 18:34:58 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-05 18:34:58 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-05 18:34:58 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 18:34:58 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-05 18:34:58 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-05 18:35:45 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-06-05 18:35:45 [main] INFO  c.f.cliente.ClienteApplication - Starting ClienteApplication using Java 21.0.10 with PID 20016 (C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend\cliente\target\classes started by PC in C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend)
+2026-06-05 18:35:45 [main] INFO  c.f.cliente.ClienteApplication - The following 1 profile is active: "dev"
+2026-06-05 18:35:45 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-05 18:35:45 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interface.
+2026-06-05 18:35:46 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-06-05 18:35:46 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-06-05 18:35:46 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-05 18:35:46 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-05 18:35:46 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1101 ms
+2026-06-05 18:35:46 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-05 18:35:46 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2036f83
+2026-06-05 18:35:46 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-05 18:35:46 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/db_tiendamusical (MySQL 8.4)
+2026-06-05 18:35:46 [main] WARN  o.f.c.i.database.base.Database - Using MySQL 8.4 which is newer than the version Flyway has been verified with. The latest verified version of MySQL is 8.1.
+2026-06-05 18:35:46 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.023s)
+2026-06-05 18:35:46 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `db_tiendamusical`: 1
+2026-06-05 18:35:46 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `db_tiendamusical` is up to date. No migration necessary.
+2026-06-05 18:35:46 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-05 18:35:46 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-05 18:35:47 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-05 18:35:47 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/db_tiendamusical]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: db_tiendamusical/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-05 18:35:48 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-05 18:35:48 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 18:35:48 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-05 18:35:48 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-05 18:35:48 [main] WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: b10b4c15-595b-4a1e-8a99-13cb962ede5d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-05 18:35:48 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-05 18:35:48 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-06-05 18:35:48 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-06-05 18:35:48 [main] INFO  c.f.cliente.ClienteApplication - Started ClienteApplication in 4.206 seconds (process running for 4.821)
+2026-06-05 18:35:49 [main] WARN  com.fullstack.cliente.DataLoader - La base de datos ya contiene registros. Se omitió el DataLoader.
+2026-06-05 18:36:05 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-05 18:36:05 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-05 18:36:05 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-06-05 18:36:33 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-05 18:36:33 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-05 18:36:33 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 18:36:33 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-05 18:36:33 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-05 18:38:58 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-06-05 18:38:58 [main] INFO  c.f.cliente.ClienteApplication - Starting ClienteApplication using Java 21.0.10 with PID 24052 (C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend\cliente\target\classes started by PC in C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend)
+2026-06-05 18:38:58 [main] INFO  c.f.cliente.ClienteApplication - The following 1 profile is active: "dev"
+2026-06-05 18:38:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-05 18:38:59 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interface.
+2026-06-05 18:38:59 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-06-05 18:38:59 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-06-05 18:38:59 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-05 18:38:59 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-05 18:38:59 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1131 ms
+2026-06-05 18:39:00 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-05 18:39:00 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5bb97fe7
+2026-06-05 18:39:00 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-05 18:39:00 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/db_tiendamusical (MySQL 8.4)
+2026-06-05 18:39:00 [main] WARN  o.f.c.i.database.base.Database - Using MySQL 8.4 which is newer than the version Flyway has been verified with. The latest verified version of MySQL is 8.1.
+2026-06-05 18:39:00 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.027s)
+2026-06-05 18:39:00 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `db_tiendamusical`: 1
+2026-06-05 18:39:00 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `db_tiendamusical` is up to date. No migration necessary.
+2026-06-05 18:39:00 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-05 18:39:00 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-05 18:39:01 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-05 18:39:01 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/db_tiendamusical]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: db_tiendamusical/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-05 18:39:01 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-05 18:39:02 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 18:39:02 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-05 18:39:02 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-05 18:39:02 [main] WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: d3a87c61-a04c-4b39-a0de-b327f3a3fe11
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-05 18:39:02 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-05 18:39:02 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-06-05 18:39:02 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-06-05 18:39:02 [main] INFO  c.f.cliente.ClienteApplication - Started ClienteApplication in 4.559 seconds (process running for 5.215)
+2026-06-05 18:39:03 [main] WARN  com.fullstack.cliente.DataLoader - La base de datos ya contiene registros. Se omitió el DataLoader.
+2026-06-05 18:39:07 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-05 18:39:07 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-05 18:39:07 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-06-05 18:40:55 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-05 18:40:55 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-05 18:40:55 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 18:40:55 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-05 18:40:55 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-05 18:41:09 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-06-05 18:41:09 [main] INFO  c.f.cliente.ClienteApplication - Starting ClienteApplication using Java 21.0.10 with PID 23504 (C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend\cliente\target\classes started by PC in C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend)
+2026-06-05 18:41:09 [main] INFO  c.f.cliente.ClienteApplication - The following 1 profile is active: "dev"
+2026-06-05 18:41:10 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-05 18:41:10 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interface.
+2026-06-05 18:41:10 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-06-05 18:41:10 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-06-05 18:41:10 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-05 18:41:10 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-05 18:41:11 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1114 ms
+2026-06-05 18:41:11 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-05 18:41:11 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@135e49b2
+2026-06-05 18:41:11 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-05 18:41:11 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/db_tiendamusical (MySQL 8.4)
+2026-06-05 18:41:11 [main] WARN  o.f.c.i.database.base.Database - Using MySQL 8.4 which is newer than the version Flyway has been verified with. The latest verified version of MySQL is 8.1.
+2026-06-05 18:41:11 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.023s)
+2026-06-05 18:41:11 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `db_tiendamusical`: 1
+2026-06-05 18:41:11 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `db_tiendamusical` is up to date. No migration necessary.
+2026-06-05 18:41:11 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-05 18:41:11 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-05 18:41:12 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-05 18:41:12 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/db_tiendamusical]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: db_tiendamusical/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-05 18:41:12 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-05 18:41:12 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 18:41:12 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-05 18:41:13 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-05 18:41:13 [main] WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 79cecb9d-7910-47af-b33d-6a4e3e171c10
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-05 18:41:13 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-05 18:41:13 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-06-05 18:41:13 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-06-05 18:41:13 [main] INFO  c.f.cliente.ClienteApplication - Started ClienteApplication in 4.289 seconds (process running for 4.894)
+2026-06-05 18:41:13 [main] WARN  com.fullstack.cliente.DataLoader - La base de datos ya contiene registros. Se omitió el DataLoader.
+2026-06-05 18:41:17 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-05 18:41:17 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-05 18:41:17 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-06-05 18:45:05 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-05 18:45:05 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-05 18:45:05 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 18:45:05 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-05 18:45:05 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-05 18:45:10 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-06-05 18:45:10 [main] INFO  c.f.cliente.ClienteApplication - Starting ClienteApplication using Java 21.0.10 with PID 24220 (C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend\cliente\target\classes started by PC in C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend)
+2026-06-05 18:45:10 [main] INFO  c.f.cliente.ClienteApplication - The following 1 profile is active: "dev"
+2026-06-05 18:45:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-05 18:45:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interface.
+2026-06-05 18:45:11 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-06-05 18:45:12 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-06-05 18:45:12 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-05 18:45:12 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-05 18:45:12 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1124 ms
+2026-06-05 18:45:12 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-05 18:45:12 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5bb97fe7
+2026-06-05 18:45:12 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-05 18:45:12 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/db_tiendamusical (MySQL 8.4)
+2026-06-05 18:45:12 [main] WARN  o.f.c.i.database.base.Database - Using MySQL 8.4 which is newer than the version Flyway has been verified with. The latest verified version of MySQL is 8.1.
+2026-06-05 18:45:12 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.024s)
+2026-06-05 18:45:12 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `db_tiendamusical`: 1
+2026-06-05 18:45:12 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `db_tiendamusical` is up to date. No migration necessary.
+2026-06-05 18:45:12 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-05 18:45:12 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-05 18:45:13 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-05 18:45:13 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/db_tiendamusical]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: db_tiendamusical/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-05 18:45:13 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-05 18:45:13 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 18:45:13 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-05 18:45:14 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-05 18:45:14 [main] WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 8057aa3e-d98c-4fc9-b328-cb6e517c3308
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-05 18:45:14 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-05 18:45:14 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-06-05 18:45:14 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-06-05 18:45:14 [main] INFO  c.f.cliente.ClienteApplication - Started ClienteApplication in 4.239 seconds (process running for 4.891)
+2026-06-05 18:45:14 [main] WARN  com.fullstack.cliente.DataLoader - La base de datos ya contiene registros. Se omitió el DataLoader.
+2026-06-05 18:45:28 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-05 18:45:28 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-05 18:45:28 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-06-05 18:48:16 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-05 18:48:16 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-05 18:48:16 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 18:48:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-05 18:48:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-05 18:48:28 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-06-05 18:48:28 [main] INFO  c.f.cliente.ClienteApplication - Starting ClienteApplication using Java 21.0.10 with PID 18300 (C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend\cliente\target\classes started by PC in C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend)
+2026-06-05 18:48:28 [main] INFO  c.f.cliente.ClienteApplication - The following 1 profile is active: "dev"
+2026-06-05 18:48:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-05 18:48:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interface.
+2026-06-05 18:48:29 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-06-05 18:48:29 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-06-05 18:48:29 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-05 18:48:29 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-05 18:48:29 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1097 ms
+2026-06-05 18:48:29 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-05 18:48:30 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@32e830a0
+2026-06-05 18:48:30 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-05 18:48:30 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/db_tiendamusical (MySQL 8.4)
+2026-06-05 18:48:30 [main] WARN  o.f.c.i.database.base.Database - Using MySQL 8.4 which is newer than the version Flyway has been verified with. The latest verified version of MySQL is 8.1.
+2026-06-05 18:48:30 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.025s)
+2026-06-05 18:48:30 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `db_tiendamusical`: 1
+2026-06-05 18:48:30 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `db_tiendamusical` is up to date. No migration necessary.
+2026-06-05 18:48:30 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-05 18:48:30 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-05 18:48:30 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-05 18:48:30 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/db_tiendamusical]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: db_tiendamusical/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-05 18:48:31 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-05 18:48:31 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 18:48:31 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-05 18:48:31 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-05 18:48:31 [main] WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 1d43960d-778e-4378-b3b8-6b18ed28806a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-05 18:48:31 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-05 18:48:32 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-06-05 18:48:32 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-06-05 18:48:32 [main] INFO  c.f.cliente.ClienteApplication - Started ClienteApplication in 4.277 seconds (process running for 4.874)
+2026-06-05 18:48:32 [main] WARN  com.fullstack.cliente.DataLoader - La base de datos ya contiene registros. Se omitió el DataLoader.
+2026-06-05 18:48:37 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-05 18:48:37 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-05 18:48:37 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-06-05 18:48:37 [http-nio-8082-exec-10] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 199 ms
+2026-06-05 18:50:00 [http-nio-8082-exec-5] INFO  c.f.cliente.service.ClienteService - Buscando cliente con id: 2
+2026-06-05 18:50:11 [http-nio-8082-exec-9] INFO  c.f.cliente.service.ClienteService - Buscando cliente con id: 4
+2026-06-05 18:50:27 [http-nio-8082-exec-4] INFO  c.f.cliente.service.ClienteService - Listando todos los clientes
+2026-06-05 18:52:03 [http-nio-8082-exec-10] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.fullstack.cliente.model.Cliente> com.fullstack.cliente.controller.ClienteController.guardar(com.fullstack.cliente.dto.ClienteRequest): [Field error in object 'clienteRequest' on field 'run': rejected value [19978668]; codes [Size.clienteRequest.run,Size.run,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequest.run,run]; arguments []; default message [run],13,9]; default message [El run debe tener entre 9 y 13 carácteres.]] ]
+2026-06-05 18:52:32 [http-nio-8082-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.fullstack.cliente.model.Cliente> com.fullstack.cliente.controller.ClienteController.guardar(com.fullstack.cliente.dto.ClienteRequest): [Field error in object 'clienteRequest' on field 'run': rejected value [19978668]; codes [Size.clienteRequest.run,Size.run,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequest.run,run]; arguments []; default message [run],13,9]; default message [El run debe tener entre 9 y 13 carácteres.]] ]
+2026-06-05 18:52:59 [http-nio-8082-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.fullstack.cliente.model.Cliente> com.fullstack.cliente.controller.ClienteController.guardar(com.fullstack.cliente.dto.ClienteRequest): [Field error in object 'clienteRequest' on field 'run': rejected value [19978668]; codes [Size.clienteRequest.run,Size.run,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequest.run,run]; arguments []; default message [run],13,9]; default message [El run debe tener entre 9 y 13 carácteres.]] ]
+2026-06-05 18:53:45 [http-nio-8082-exec-3] INFO  c.f.cliente.service.ClienteService - Guardando cliente con RUN: 199786687
+2026-06-05 18:53:45 [http-nio-8082-exec-3] INFO  c.f.cliente.service.ClienteService - Cliente creado exitosamente con id: 26
+2026-06-05 18:57:57 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-05 18:57:57 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-05 18:57:57 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 18:57:57 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-05 18:57:57 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-05 18:59:13 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-06-05 18:59:13 [main] INFO  c.f.cliente.ClienteApplication - Starting ClienteApplication using Java 21.0.10 with PID 22828 (C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend\cliente\target\classes started by PC in C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend)
+2026-06-05 18:59:13 [main] INFO  c.f.cliente.ClienteApplication - The following 1 profile is active: "dev"
+2026-06-05 18:59:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-05 18:59:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interface.
+2026-06-05 18:59:14 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-06-05 18:59:14 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-06-05 18:59:14 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-05 18:59:14 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-05 18:59:14 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1116 ms
+2026-06-05 18:59:15 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-05 18:59:15 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@41167ded
+2026-06-05 18:59:15 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-05 18:59:15 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/db_tiendamusical (MySQL 8.4)
+2026-06-05 18:59:15 [main] WARN  o.f.c.i.database.base.Database - Using MySQL 8.4 which is newer than the version Flyway has been verified with. The latest verified version of MySQL is 8.1.
+2026-06-05 18:59:15 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.023s)
+2026-06-05 18:59:15 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `db_tiendamusical`: 1
+2026-06-05 18:59:15 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `db_tiendamusical` is up to date. No migration necessary.
+2026-06-05 18:59:15 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-05 18:59:15 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-05 18:59:16 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-05 18:59:16 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/db_tiendamusical]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: db_tiendamusical/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-05 18:59:16 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-05 18:59:16 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 18:59:16 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-05 18:59:17 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-05 18:59:17 [main] WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 691728ee-5927-450f-8fc4-650c31b6e58b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-05 18:59:17 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-05 18:59:17 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-06-05 18:59:17 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-06-05 18:59:17 [main] INFO  c.f.cliente.ClienteApplication - Started ClienteApplication in 4.228 seconds (process running for 4.917)
+2026-06-05 18:59:17 [main] WARN  com.fullstack.cliente.DataLoader - La base de datos ya contiene registros. Se omitió el DataLoader.
+2026-06-05 18:59:37 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-05 18:59:37 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-05 18:59:37 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-06-05 18:59:37 [http-nio-8082-exec-8] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)'] with root cause
+java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)'
+	at org.springdoc.core.service.GenericResponseService.lambda$getGenericMapResponse$8(GenericResponseService.java:706)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
+	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627)
+	at org.springdoc.core.service.GenericResponseService.getGenericMapResponse(GenericResponseService.java:708)
+	at org.springdoc.core.service.GenericResponseService.build(GenericResponseService.java:247)
+	at org.springdoc.api.AbstractOpenApiResource.calculatePath(AbstractOpenApiResource.java:499)
+	at org.springdoc.api.AbstractOpenApiResource.calculatePath(AbstractOpenApiResource.java:676)
+	at org.springdoc.webmvc.api.OpenApiResource.lambda$calculatePath$11(OpenApiResource.java:220)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.springdoc.webmvc.api.OpenApiResource.calculatePath(OpenApiResource.java:201)
+	at org.springdoc.webmvc.api.OpenApiResource.lambda$getPaths$2(OpenApiResource.java:171)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.springdoc.webmvc.api.OpenApiResource.getPaths(OpenApiResource.java:150)
+	at org.springdoc.api.AbstractOpenApiResource.getOpenApi(AbstractOpenApiResource.java:353)
+	at org.springdoc.webmvc.api.OpenApiResource.openapiJson(OpenApiResource.java:125)
+	at org.springdoc.webmvc.api.OpenApiWebMvcResource.openapiJson(OpenApiWebMvcResource.java:114)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:376)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at com.fullstack.cliente.security.JwtAuthenticationsFilter.doFilterInternal(JwtAuthenticationsFilter.java:32)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-06-05 19:01:29 [http-nio-8082-exec-8] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)'] with root cause
+java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)'
+	at org.springdoc.core.service.GenericResponseService.lambda$getGenericMapResponse$8(GenericResponseService.java:706)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
+	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627)
+	at org.springdoc.core.service.GenericResponseService.getGenericMapResponse(GenericResponseService.java:708)
+	at org.springdoc.core.service.GenericResponseService.build(GenericResponseService.java:247)
+	at org.springdoc.api.AbstractOpenApiResource.calculatePath(AbstractOpenApiResource.java:499)
+	at org.springdoc.api.AbstractOpenApiResource.calculatePath(AbstractOpenApiResource.java:676)
+	at org.springdoc.webmvc.api.OpenApiResource.lambda$calculatePath$11(OpenApiResource.java:220)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.springdoc.webmvc.api.OpenApiResource.calculatePath(OpenApiResource.java:201)
+	at org.springdoc.webmvc.api.OpenApiResource.lambda$getPaths$2(OpenApiResource.java:171)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.springdoc.webmvc.api.OpenApiResource.getPaths(OpenApiResource.java:150)
+	at org.springdoc.api.AbstractOpenApiResource.getOpenApi(AbstractOpenApiResource.java:353)
+	at org.springdoc.webmvc.api.OpenApiResource.openapiJson(OpenApiResource.java:125)
+	at org.springdoc.webmvc.api.OpenApiWebMvcResource.openapiJson(OpenApiWebMvcResource.java:114)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:376)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:132)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:86)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at com.fullstack.cliente.security.JwtAuthenticationsFilter.doFilterInternal(JwtAuthenticationsFilter.java:32)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:385)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-06-05 19:03:08 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-05 19:03:08 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-05 19:03:08 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 19:03:08 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-05 19:03:08 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-05 19:03:36 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-06-05 19:03:36 [main] INFO  c.f.cliente.ClienteApplication - Starting ClienteApplication using Java 21.0.10 with PID 6948 (C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend\cliente\target\classes started by PC in C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend)
+2026-06-05 19:03:36 [main] INFO  c.f.cliente.ClienteApplication - The following 1 profile is active: "dev"
+2026-06-05 19:03:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-05 19:03:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interface.
+2026-06-05 19:03:38 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-06-05 19:03:38 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-06-05 19:03:38 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-05 19:03:38 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-05 19:03:38 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1161 ms
+2026-06-05 19:03:38 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-05 19:03:38 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@33187485
+2026-06-05 19:03:38 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-05 19:03:38 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/db_tiendamusical (MySQL 8.4)
+2026-06-05 19:03:38 [main] WARN  o.f.c.i.database.base.Database - Using MySQL 8.4 which is newer than the version Flyway has been verified with. The latest verified version of MySQL is 8.1.
+2026-06-05 19:03:38 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.024s)
+2026-06-05 19:03:38 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `db_tiendamusical`: 1
+2026-06-05 19:03:38 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `db_tiendamusical` is up to date. No migration necessary.
+2026-06-05 19:03:38 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-05 19:03:38 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-05 19:03:39 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-05 19:03:39 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/db_tiendamusical]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: db_tiendamusical/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-05 19:03:39 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-05 19:03:39 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 19:03:40 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-05 19:03:40 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-05 19:03:40 [main] WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 6729b240-26a8-4c5a-b77f-d5417f0e6cf7
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-05 19:03:40 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-05 19:03:40 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-06-05 19:03:40 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-06-05 19:03:40 [main] INFO  c.f.cliente.ClienteApplication - Started ClienteApplication in 4.349 seconds (process running for 4.957)
+2026-06-05 19:03:41 [main] WARN  com.fullstack.cliente.DataLoader - La base de datos ya contiene registros. Se omitió el DataLoader.
+2026-06-05 19:03:45 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-05 19:03:45 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-05 19:03:45 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-06-05 19:03:45 [http-nio-8082-exec-8] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 176 ms
+2026-06-05 19:04:08 [http-nio-8082-exec-10] INFO  c.f.cliente.service.ClienteService - Listando todos los clientes
+2026-06-05 19:04:50 [http-nio-8082-exec-6] INFO  c.f.cliente.service.ClienteService - Guardando cliente con RUN: 123345456
+2026-06-05 19:04:50 [http-nio-8082-exec-6] INFO  c.f.cliente.service.ClienteService - Cliente creado exitosamente con id: 27
+2026-06-05 19:05:00 [http-nio-8082-exec-9] INFO  c.f.cliente.service.ClienteService - Listando todos los clientes
+2026-06-05 19:05:10 [http-nio-8082-exec-8] INFO  c.f.cliente.service.ClienteService - Eliminando cliente con id: 27
+2026-06-05 19:05:10 [http-nio-8082-exec-8] INFO  c.f.cliente.service.ClienteService - Buscando cliente con id: 27
+2026-06-05 19:05:10 [http-nio-8082-exec-8] INFO  c.f.cliente.service.ClienteService - Cliente eliminado exitosamente con id: 27
+2026-06-05 19:05:27 [http-nio-8082-exec-7] INFO  c.f.cliente.service.ClienteService - Eliminando cliente con id: 27
+2026-06-05 19:05:27 [http-nio-8082-exec-7] INFO  c.f.cliente.service.ClienteService - Buscando cliente con id: 27
+2026-06-05 19:05:27 [http-nio-8082-exec-7] WARN  c.f.cliente.service.ClienteService - No se pudo eliminar, cliente no encontrado con id: 27
+2026-06-05 19:06:12 [http-nio-8082-exec-10] INFO  c.f.cliente.service.ClienteService - Eliminando cliente con id: 2
+2026-06-05 19:06:12 [http-nio-8082-exec-10] INFO  c.f.cliente.service.ClienteService - Buscando cliente con id: 2
+2026-06-05 19:06:12 [http-nio-8082-exec-10] INFO  c.f.cliente.service.ClienteService - Cliente eliminado exitosamente con id: 2
+2026-06-05 19:07:36 [http-nio-8082-exec-2] INFO  c.f.cliente.service.ClienteService - Buscando cliente con id: 1
+2026-06-05 19:07:48 [http-nio-8082-exec-3] INFO  c.f.cliente.service.ClienteService - Eliminando cliente con id: 1
+2026-06-05 19:07:48 [http-nio-8082-exec-3] INFO  c.f.cliente.service.ClienteService - Buscando cliente con id: 1
+2026-06-05 19:07:48 [http-nio-8082-exec-3] INFO  c.f.cliente.service.ClienteService - Cliente eliminado exitosamente con id: 1
+2026-06-05 19:11:53 [http-nio-8082-exec-4] INFO  c.f.cliente.service.ClienteService - Eliminando cliente con id: 1
+2026-06-05 19:11:53 [http-nio-8082-exec-4] INFO  c.f.cliente.service.ClienteService - Buscando cliente con id: 1
+2026-06-05 19:11:53 [http-nio-8082-exec-4] WARN  c.f.cliente.service.ClienteService - No se pudo eliminar, cliente no encontrado con id: 1
+2026-06-05 19:12:04 [http-nio-8082-exec-6] INFO  c.f.cliente.service.ClienteService - Eliminando cliente con id: 26
+2026-06-05 19:12:04 [http-nio-8082-exec-6] INFO  c.f.cliente.service.ClienteService - Buscando cliente con id: 26
+2026-06-05 19:12:04 [http-nio-8082-exec-6] INFO  c.f.cliente.service.ClienteService - Cliente eliminado exitosamente con id: 26
+2026-06-05 19:12:29 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-05 19:12:29 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-05 19:12:29 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 19:12:29 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-05 19:12:29 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-05 19:12:53 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-06-05 19:12:53 [main] INFO  c.f.cliente.ClienteApplication - Starting ClienteApplication using Java 21.0.10 with PID 9036 (C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend\cliente\target\classes started by PC in C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend)
+2026-06-05 19:12:53 [main] INFO  c.f.cliente.ClienteApplication - The following 1 profile is active: "dev"
+2026-06-05 19:12:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-05 19:12:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 1 JPA repository interface.
+2026-06-05 19:12:54 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-06-05 19:12:54 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-06-05 19:12:54 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-05 19:12:54 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-05 19:12:54 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1082 ms
+2026-06-05 19:12:54 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-05 19:12:54 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5403431a
+2026-06-05 19:12:54 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-05 19:12:54 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/db_tiendamusical (MySQL 8.4)
+2026-06-05 19:12:54 [main] WARN  o.f.c.i.database.base.Database - Using MySQL 8.4 which is newer than the version Flyway has been verified with. The latest verified version of MySQL is 8.1.
+2026-06-05 19:12:54 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.026s)
+2026-06-05 19:12:55 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `db_tiendamusical`: 1
+2026-06-05 19:12:55 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `db_tiendamusical` is up to date. No migration necessary.
+2026-06-05 19:12:55 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-05 19:12:55 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-05 19:12:55 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-05 19:12:55 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/db_tiendamusical]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: db_tiendamusical/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-05 19:12:56 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-05 19:12:56 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 19:12:56 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-05 19:12:56 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-05 19:12:56 [main] WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: e1d2ea52-3751-4b6e-a66b-d1e461b05e30
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-05 19:12:56 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-05 19:12:57 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-06-05 19:12:57 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-06-05 19:12:57 [main] INFO  c.f.cliente.ClienteApplication - Started ClienteApplication in 4.301 seconds (process running for 4.983)
+2026-06-05 19:12:57 [main] WARN  com.fullstack.cliente.DataLoader - La base de datos ya contiene registros. Se omitió el DataLoader.
+2026-06-05 19:13:18 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-05 19:13:18 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-05 19:13:18 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-06-05 19:13:18 [http-nio-8082-exec-1] INFO  c.f.cliente.service.ClienteService - Eliminando cliente con id: 25
+2026-06-05 19:13:18 [http-nio-8082-exec-1] INFO  c.f.cliente.service.ClienteService - Buscando cliente con id: 25
+2026-06-05 19:13:18 [http-nio-8082-exec-1] INFO  c.f.cliente.service.ClienteService - Cliente eliminado exitosamente con id: 25
+2026-06-05 19:13:26 [http-nio-8082-exec-10] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 193 ms
+2026-06-05 19:13:49 [http-nio-8082-exec-1] INFO  c.f.cliente.service.ClienteService - Eliminando cliente con id: 6
+2026-06-05 19:13:49 [http-nio-8082-exec-1] INFO  c.f.cliente.service.ClienteService - Buscando cliente con id: 6
+2026-06-05 19:13:49 [http-nio-8082-exec-1] INFO  c.f.cliente.service.ClienteService - Cliente eliminado exitosamente con id: 6
+2026-06-05 19:16:02 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-05 19:16:02 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-05 19:16:02 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 19:16:02 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-05 19:16:02 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-06-05 19:16:39 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-06-05 19:16:39 [main] INFO  c.f.cliente.ClienteApplication - Starting ClienteApplication using Java 21.0.10 with PID 24784 (C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend\cliente\target\classes started by PC in C:\Users\PC\Desktop\Programacion\Tienda-Musical-Backend)
+2026-06-05 19:16:39 [main] INFO  c.f.cliente.ClienteApplication - The following 1 profile is active: "dev"
+2026-06-05 19:16:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-05 19:16:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interface.
+2026-06-05 19:16:41 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-06-05 19:16:41 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-06-05 19:16:41 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-05 19:16:41 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-05 19:16:41 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1095 ms
+2026-06-05 19:16:41 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-05 19:16:41 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@13e1e816
+2026-06-05 19:16:41 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-05 19:16:41 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/db_tiendamusical (MySQL 8.4)
+2026-06-05 19:16:41 [main] WARN  o.f.c.i.database.base.Database - Using MySQL 8.4 which is newer than the version Flyway has been verified with. The latest verified version of MySQL is 8.1.
+2026-06-05 19:16:41 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.024s)
+2026-06-05 19:16:41 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `db_tiendamusical`: 1
+2026-06-05 19:16:41 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `db_tiendamusical` is up to date. No migration necessary.
+2026-06-05 19:16:41 [main] INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-05 19:16:41 [main] INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-05 19:16:42 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-05 19:16:42 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/db_tiendamusical]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.4.3
+	Default catalog/schema: db_tiendamusical/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-05 19:16:42 [main] INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-05 19:16:43 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 19:16:43 [main] INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-05 19:16:43 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-05 19:16:43 [main] WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: e09ae62c-0c7c-4665-9f82-63e57ecb2715
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-06-05 19:16:43 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-05 19:16:43 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-06-05 19:16:43 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2026-06-05 19:16:43 [main] INFO  c.f.cliente.ClienteApplication - Started ClienteApplication in 4.289 seconds (process running for 4.859)
+2026-06-05 19:16:44 [main] WARN  com.fullstack.cliente.DataLoader - La base de datos ya contiene registros. Se omitió el DataLoader.
+2026-06-05 19:16:48 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-05 19:16:48 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-05 19:16:48 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-06-05 19:16:48 [http-nio-8082-exec-9] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 184 ms
+2026-06-05 19:17:20 [http-nio-8082-exec-5] INFO  c.f.cliente.service.ClienteService - Eliminando cliente con id: 221
+2026-06-05 19:17:20 [http-nio-8082-exec-5] INFO  c.f.cliente.service.ClienteService - Buscando cliente con id: 221
+2026-06-05 19:17:20 [http-nio-8082-exec-5] WARN  c.f.cliente.service.ClienteService - No se pudo eliminar, cliente no encontrado con id: 221
+2026-06-05 19:17:28 [http-nio-8082-exec-6] INFO  c.f.cliente.service.ClienteService - Eliminando cliente con id: 5
+2026-06-05 19:17:28 [http-nio-8082-exec-6] INFO  c.f.cliente.service.ClienteService - Buscando cliente con id: 5
+2026-06-05 19:17:28 [http-nio-8082-exec-6] INFO  c.f.cliente.service.ClienteService - Cliente eliminado exitosamente con id: 5
+2026-06-05 19:20:08 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-05 19:20:08 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-06-05 19:20:08 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-05 19:20:08 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-06-05 19:20:08 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
