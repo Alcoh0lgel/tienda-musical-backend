@@ -13,12 +13,17 @@
         <module name="devolucion" />
         <module name="servicioTecnico" />
         <module name="reclamos" />
-        <module name="auth-Service" />
         <module name="productoArriendo" />
         <module name="pedidos" />
         <module name="productos" />
         <module name="recepcionArriendo" />
         <module name="Arriendo" />
+      </profile>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="auth-Service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

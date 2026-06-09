@@ -4,7 +4,6 @@ import com.fullstack.Auth_Service.dto.LoginResponse;
 import com.fullstack.Auth_Service.exception.MalCredencialException;
 import com.fullstack.Auth_Service.model.Usuario;
 import com.fullstack.Auth_Service.repository.UsuarioRepository;
-import org.hibernate.exception.AuthException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
