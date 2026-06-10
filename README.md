@@ -62,10 +62,10 @@ En el postman, colocaremos el link para acceder con nuestras credenciales al tok
 
 En el JSON colocaremos los siguientes datos para acceder al token:  
 ```
-{
-  "username": "admin",
-  "password": "1234"
-}
+    {
+      "username": "admin",
+      "password": "1234"
+    }
 ```
 Al ingresar y clickar en "SEND" se nos hará entrega del token, estaríamos viendo un formato parecido a este:
 ```

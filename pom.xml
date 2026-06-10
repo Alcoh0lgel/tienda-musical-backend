@@ -17,6 +17,7 @@
     <name>Tienda Musical Backend - Multi-Módulo</name>
 
     <modules>
+        <module>api-gateway</module>
         <module>auth-Service</module>
         <module>cliente</module>
         <module>productos</module>
@@ -27,6 +28,7 @@
         <module>reclamos</module>
         <module>servicioTecnico</module>
         <module>recepcionArriendo</module>
+        <module>eureka-server</module>
     </modules>
 
     <properties>
@@ -49,6 +51,14 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 
     <build>
         <pluginManagement>

@@ -1,0 +1,65 @@
+server:
+  port: ${PORT:8080}
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: auth-Service
+          uri: http://localhost:8081
+          predicates:
+            - Path=/auth/**
+        - id: cliente
+          uri: http://localhost:8082
+          predicates:
+            - Path=/api/clientes/**
+        - id: productos
+          uri: http://localhost:8083
+          predicates:
+            - Path=/api/productos/**
+        - id: productoArriendo
+          uri: http://localhost:8084
+          predicates:
+            - Path=/api/productoArriendo/**
+        - id: pedidos
+          uri: http://localhost:8085
+          predicates:
+            - Path=/api/pedidos/**
+        - id: arriendo
+          uri: http://localhost:8086
+          predicates:
+            - Path=/api/arriendos/**
+        - id: devolucion
+          uri: http://localhost:8087
+          predicates:
+            - Path=/api/devoluciones/**
+        - id: servicioTecnico
+          uri: http://localhost:8088
+          predicates:
+            - Path=/api/servicioTecnico/**
+        - id: reclamos
+          uri: http://localhost:8089
+          predicates:
+            - Path=/api/reclamos/**
+        - id: recepcionArriendo
+          uri: http://localhost:8090
+          predicates:
+            - Path=/api/recepcionArriendo/**
+
+management:
+  endpoint:
+    gateway:
+      access: read_only
+  endpoints:
+    web:
+      exposure:
+        include:  health,info,gateway
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL:http://localhost:8791/eureka/}
+  instance:
+    prefer-ip-address: true
