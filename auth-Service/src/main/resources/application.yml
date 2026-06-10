@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: ${PORT:8081}
 
 spring:
   application:
@@ -33,3 +33,10 @@ spring:
 jwt:
   secret: laClaveDeLaTiendaDeMusicaEstanLargaLoSuficiente
   expiration-ms: 3600000
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL:http://localhost:8791/eureka/}
+  instance:
+    prefer-ip-address: true

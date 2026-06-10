@@ -18,6 +18,7 @@
 
     <modules>
         <module>api-gateway</module>
+        <module>eureka-server</module>
         <module>auth-Service</module>
         <module>cliente</module>
         <module>productos</module>
@@ -26,9 +27,7 @@
         <module>pedidos</module>
         <module>arriendo</module>
         <module>reclamos</module>
-        <module>servicioTecnico</module>
         <module>recepcionArriendo</module>
-        <module>eureka-server</module>
     </modules>
 
     <properties>

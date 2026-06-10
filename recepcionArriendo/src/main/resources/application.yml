@@ -1,5 +1,5 @@
 server:
-  port: 8090
+  port: ${PORT:8090}
 
 spring:
   application:
@@ -37,3 +37,10 @@ jwt:
 
 arriendo-service:
   url: http://localhost:8086/api/arriendos
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL:http://localhost:8791/eureka/}
+  instance:
+    prefer-ip-address: true

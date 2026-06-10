@@ -8,43 +8,39 @@ spring:
     gateway:
       routes:
         - id: auth-Service
-          uri: http://localhost:8081
+          uri: lb://AUTH-SERVICE
           predicates:
             - Path=/auth/**
         - id: cliente
-          uri: http://localhost:8082
+          uri: lb://CLIENTE
           predicates:
             - Path=/api/clientes/**
         - id: productos
-          uri: http://localhost:8083
+          uri: lb://PRODUCTOS
           predicates:
             - Path=/api/productos/**
         - id: productoArriendo
-          uri: http://localhost:8084
+          uri: lb://PRODUCTOARRIENDO
           predicates:
             - Path=/api/productoArriendo/**
         - id: pedidos
-          uri: http://localhost:8085
+          uri: lb://PEDIDOS
           predicates:
             - Path=/api/pedidos/**
         - id: arriendo
-          uri: http://localhost:8086
+          uri: lb://ARRIENDO
           predicates:
             - Path=/api/arriendos/**
         - id: devolucion
-          uri: http://localhost:8087
+          uri: lb://DEVOLUCION
           predicates:
             - Path=/api/devoluciones/**
-        - id: servicioTecnico
-          uri: http://localhost:8088
-          predicates:
-            - Path=/api/servicioTecnico/**
         - id: reclamos
-          uri: http://localhost:8089
+          uri: lb://RECLAMOS
           predicates:
             - Path=/api/reclamos/**
         - id: recepcionArriendo
-          uri: http://localhost:8090
+          uri: lb://RECEPCIONARRIENDO
           predicates:
             - Path=/api/recepcionArriendo/**
 

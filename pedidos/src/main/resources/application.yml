@@ -1,5 +1,5 @@
 server:
-  port: 8085
+  port: ${PORT:8085}
 
 spring:
   application:
@@ -32,8 +32,9 @@ spring:
 jwt:
   secret: laClaveDeLaTiendaDeMusicaEstanLargaLoSuficiente
 
-cliente-service:
-  url: http://localhost:8082/api/clientes
-
-producto-service:
-  url: http://localhost:8083/api/productos
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL:http://localhost:8791/eureka/}
+  instance:
+    prefer-ip-address: true

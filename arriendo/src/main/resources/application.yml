@@ -1,5 +1,5 @@
 server:
-  port: 8086
+  port: ${PORT:8086}
 
 spring:
   application:
@@ -37,3 +37,10 @@ cliente-service:
 
 productoArriendo-service:
   url: http://localhost:8084/api/productoArriendo
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL:http://localhost:8791/eureka/}
+  instance:
+    prefer-ip-address: true

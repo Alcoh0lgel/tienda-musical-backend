@@ -1,5 +1,5 @@
 server:
-  port: 8087
+  port: ${PORT:8087}
 
 spring:
   application:
@@ -37,3 +37,10 @@ jwt:
 
 pedidos-service:
   url: http://localhost:8085/api/pedidos
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL:http://localhost:8791/eureka/}
+  instance:
+    prefer-ip-address: true
