@@ -1,0 +1,102 @@
+services:
+  eureka-server:
+    build: ./eureka-server
+    ports:
+      - "8791:8791"
+
+  api-gateway:
+    build: ./api-gateway
+    ports:
+      - "8080:8080"
+    depends_on:
+      - eureka-server
+    environment:
+      - EUREKA_URL=http://eureka-server:8791/eureka/
+
+  auth-service:
+    build: ./auth-service
+    ports:
+      - "8081:8081"
+    depends_on:
+      - eureka-server
+    environment:
+      - EUREKA_URL=http://eureka-server:8791/eureka/
+
+  cliente:
+    build: ./cliente
+    ports:
+      - "8082:8082"
+    depends_on:
+      - eureka-server
+    environment:
+      - EUREKA_URL=http://eureka-server:8791/eureka/
+
+  productos:
+    build: ./productos
+    ports:
+      - "8083:8083"
+    depends_on:
+      - eureka-server
+    environment:
+      - EUREKA_URL=http://eureka-server:8791/eureka/
+
+  producto-arriendo: # <-- Cambiado a minúsculas
+    build: ./productoArriendo # <-- La carpeta se mantiene con mayúscula
+    ports:
+      - "8084:8084"
+    depends_on:
+      - eureka-server
+    environment:
+      - EUREKA_URL=http://eureka-server:8791/eureka/
+
+  pedidos:
+    build: ./pedidos
+    ports:
+      - "8085:8085"
+    depends_on:
+      - eureka-server
+      - cliente
+      - productos
+    environment:
+      - EUREKA_URL=http://eureka-server:8791/eureka/
+
+  arriendo:
+    build: ./arriendo
+    ports:
+      - "8086:8086"
+    depends_on:
+      - eureka-server
+      - cliente
+      - producto-arriendo # <-- Dependencia actualizada
+    environment:
+      - EUREKA_URL=http://eureka-server:8791/eureka/
+
+  devolucion:
+    build: ./devolucion
+    ports:
+      - "8087:8087"
+    depends_on:
+      - eureka-server
+      - pedidos
+    environment:
+      - EUREKA_URL=http://eureka-server:8791/eureka/
+
+  reclamos:
+    build: ./reclamos
+    ports:
+      - "8089:8089"
+    depends_on:
+      - eureka-server
+      - cliente
+    environment:
+      - EUREKA_URL=http://eureka-server:8791/eureka/
+
+  recepcion-arriendo: # <-- Cambiado a minúsculas
+    build: ./recepcionArriendo # <-- La carpeta se mantiene con mayúscula
+    ports:
+      - "8090:8090"
+    depends_on:
+      - eureka-server
+      - arriendo
+    environment:
+      - EUREKA_URL=http://eureka-server:8791/eureka/
