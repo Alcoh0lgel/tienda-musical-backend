@@ -1,5 +1,6 @@
 package com.fullstack.cliente.controller;
 
+import com.fullstack.cliente.assemblers.ClienteModelAssembler; // Asegúrate de que el nombre coincida
 import com.fullstack.cliente.dto.ClienteRequest;
 import com.fullstack.cliente.model.Cliente;
 import com.fullstack.cliente.service.ClienteService;
@@ -8,12 +9,18 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.hateoas.CollectionModel;
+import org.springframework.hateoas.EntityModel;
+import org.springframework.hateoas.MediaTypes;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
+
+import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
 
 @RestController
 @RequestMapping("/api/clientes")
@@ -22,37 +29,47 @@ public class ClienteController {
     @Autowired
     private ClienteService clienteService;
 
-    @GetMapping
-    public ResponseEntity<List<Cliente>> listar(){
+    @Autowired
+    private ClienteModelAssembler assembler;
+
+    @GetMapping(produces = MediaTypes.HAL_JSON_VALUE)
+    public CollectionModel<EntityModel<Cliente>> listar() {
         List<Cliente> clientes = clienteService.listarTodos();
-        if(clientes.isEmpty()){
-            return ResponseEntity.noContent().build();
-        }
-        return ResponseEntity.ok(clientes);
+
+        List<EntityModel<Cliente>> clienteModels = clientes.stream()
+                .map(assembler::toModel)
+                .collect(Collectors.toList());
+
+        return CollectionModel.of(clienteModels,
+                linkTo(methodOn(ClienteController.class).listar()).withSelfRel());
     }
 
-    @GetMapping("/{id}")
-    public ResponseEntity<Cliente> buscarPorId(@PathVariable Integer id){
+    @GetMapping(value = "/{id}", produces = MediaTypes.HAL_JSON_VALUE)
+    public ResponseEntity<EntityModel<Cliente>> buscarPorId(@PathVariable Integer id) {
         Cliente cliente = clienteService.buscarPorId(id);
-        if(cliente == null){
+        if (cliente == null) {
             return ResponseEntity.notFound().build();
         }
-        return ResponseEntity.ok(cliente);
+        return ResponseEntity.ok(assembler.toModel(cliente));
     }
 
-    @PostMapping
-    public ResponseEntity<Cliente> guardar(@Valid @RequestBody ClienteRequest request){
+    @PostMapping(produces = MediaTypes.HAL_JSON_VALUE)
+    public ResponseEntity<EntityModel<Cliente>> guardar(@Valid @RequestBody ClienteRequest request) {
         Cliente clienteGuardado = clienteService.crearDesdeRequest(request);
-        return ResponseEntity.status(HttpStatus.CREATED).body(clienteGuardado);
+
+        return ResponseEntity
+                .status(HttpStatus.CREATED)
+                .location(linkTo(methodOn(ClienteController.class).buscarPorId(clienteGuardado.getId())).toUri())
+                .body(assembler.toModel(clienteGuardado));
     }
 
-    @PutMapping("/{id}")
-    public ResponseEntity<Cliente> actualizar(@PathVariable Integer id, @Valid @RequestBody ClienteRequest request){
+    @PutMapping(value = "/{id}", produces = MediaTypes.HAL_JSON_VALUE)
+    public ResponseEntity<EntityModel<Cliente>> actualizar(@PathVariable Integer id, @Valid @RequestBody ClienteRequest request) {
         Cliente clienteActualizado = clienteService.actualizar(id, request);
-        if(clienteActualizado == null){
+        if (clienteActualizado == null) {
             return ResponseEntity.notFound().build();
         }
-        return ResponseEntity.ok(clienteActualizado);
+        return ResponseEntity.ok(assembler.toModel(clienteActualizado));
     }
 
     @DeleteMapping("/{id}")
@@ -68,7 +85,7 @@ public class ClienteController {
     }
 
     @GetMapping("/publico")
-    public ResponseEntity<String> publico(){
+    public ResponseEntity<String> publico() {
         return ResponseEntity.ok("Endpoint público - Tienda musical");
     }
 }

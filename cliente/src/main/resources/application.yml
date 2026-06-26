@@ -1,5 +1,6 @@
 server:
   port: ${PORT:8082}
+  forward-headers-strategy: framework
 
 spring:
   application:
@@ -40,6 +41,8 @@ springdoc:
   swagger-ui:
     enabled: true
     path: /swagger-ui.html
+  hateoas:
+    enabled: false
 
 eureka:
   client:

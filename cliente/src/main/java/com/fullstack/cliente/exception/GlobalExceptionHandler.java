@@ -43,4 +43,20 @@ public class GlobalExceptionHandler {
         error.setErrores(errores);
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(error);
     }
+
+    @org.springframework.web.bind.annotation.ExceptionHandler(RunDuplicadoException.class)
+    public org.springframework.http.ResponseEntity<Object> handleRunDuplicado(
+            RunDuplicadoException ex,
+            org.springframework.web.context.request.WebRequest request) {
+
+        java.util.Map<String, Object> body = new java.util.LinkedHashMap<>();
+        body.put("fecha", java.time.LocalDateTime.now().toString());
+        body.put("estado", org.springframework.http.HttpStatus.BAD_REQUEST.value()); // 400
+        body.put("error", "Bad Request");
+        body.put("mensaje", ex.getMessage());
+        body.put("ruta", ((org.springframework.web.context.request.ServletWebRequest) request).getRequest().getRequestURI());
+        body.put("errores", null);
+
+        return new org.springframework.http.ResponseEntity<>(body, org.springframework.http.HttpStatus.BAD_REQUEST);
+    }
 }

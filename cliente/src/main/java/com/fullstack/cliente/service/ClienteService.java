@@ -1,13 +1,16 @@
 package com.fullstack.cliente.service;
 
 import com.fullstack.cliente.dto.ClienteRequest;
+import com.fullstack.cliente.exception.RunDuplicadoException;
 import com.fullstack.cliente.model.Cliente;
 import com.fullstack.cliente.repository.ClienteRepository;
 import jakarta.transaction.Transactional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 
@@ -33,6 +36,10 @@ public class ClienteService {
         return clienteRepository.save(cliente);}
 
     public Cliente crearDesdeRequest(ClienteRequest request){
+        if (clienteRepository.existsByRun(request.getRun())) {
+            // Lanzamos una excepción clara que Spring convertirá en un error 400 Bad Request
+            throw new RunDuplicadoException("El RUN ya existe en la base de datos.");
+        }
 
         Cliente cliente = new Cliente();
 
