@@ -37,7 +37,6 @@ public class ClienteService {
 
     public Cliente crearDesdeRequest(ClienteRequest request){
         if (clienteRepository.existsByRun(request.getRun())) {
-            // Lanzamos una excepción clara que Spring convertirá en un error 400 Bad Request
             throw new RunDuplicadoException("El RUN ya existe en la base de datos.");
         }
 
